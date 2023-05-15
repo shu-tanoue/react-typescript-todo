@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
 interface item {
   id: number;
   text: string;
@@ -59,7 +60,7 @@ export const TodoList = () => {
         placeholder="Add todo item"
         onChange={(e) => setInput(e.currentTarget.value)}
       />
-      <button onClick={handleClick}></button>
+      <button onClick={handleClick}>Add</button>
     </div>
   );
 };
